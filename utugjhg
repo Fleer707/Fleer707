@@ -1,0 +1,13 @@
+wx.showActionSheet({
+    itemList: ["action1", "action2"],
+    success: (res) => {
+        if (res.tapIndex === 0) {
+        	// do action 1
+        }else if (res.tapIndex === 1){
+        	// do action 2
+        }
+    },
+    fail: (res) => {
+        console.log(res.errMsg)
+    }
+})
