@@ -1,0 +1,16 @@
+history.length  
+history.state  
+history.go()  
+history.back()
+history.forward()
+
+/** 
+* 将页面push进页面栈
+* state: 如果你不做任何标识可以传null
+* title: 浏览器标题(现在都不支持，所以都传空字符串''，你可以通过document.title = 'xxxx'去修改)
+* url: 可以是任何和当前url同源的地址 如'/xxxx'
+*/
+history.pushState(state, title, url)
+
+// 更新当前页面栈
+history.replaceState(state, title, url)
